@@ -19,3 +19,13 @@ OneWire, maintained by Paul Stoffregen (website)
 ### DS1307
 Updated by bricofoy from Arduino Forums
 * http://forum.arduino.cc/index.php/topic,93077.0.html
+
+## How to setup the time (via Serial Port)
+### Easy way
+Use the `time_updater.py` script (don't forget to install pyserial first in your laptop), 
+### Manual way
+You can send manually serial bytes like what is shown in the code. Make sure it is 19 bytes.
+```cpp
+// SET_YYMMDDdd_hhmmss
+// SET_16030201_123001 (19 bytes)
+```
